@@ -1,4 +1,18 @@
+@font-face {
+    font-family: "Main1";
+    src: url(/fonts/Montserrat_Alternates/MontserratAlternates-Black.ttf);
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf);
+}
+
+
+
+
 html {
+    overflow-y: hidden;
     padding: 0px;
     margin: 0px;
 }
@@ -11,4 +25,14 @@ body {
 h1 {
     padding: 0px;
     margin: 0px;
+}
+
+.fa {
+    padding-left: 10px;
+    padding-right: 10px;
+    /* font-size: 0px; */
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
 }
