@@ -1,44 +1,43 @@
-body {
-    background-color: #22223B;
-}
-
 header {
     position: sticky;
-    text-align: center;
-    background-color: #AD440B;
+    /* text-align: center; */
+    background-color: black;
     padding: 2vh;
+    height: 50px;
 }
 
-header h1 {
+header p {
     display: inline;
-    color: #C8B6FF;
+    color: #E5E5E5;
     font-family: 'Main1';
-}
-
-@media screen and (max-width: 1200px) {
-    header h1 {
-        color: limegreen;
-    }
+    font-size: 48px;
+    padding: 0px;
+    margin: 0px;
 }
 
 header img {
     position: absolute;
     right: 12px;
     top: 10px;
+    background-color: #dad8d8;
+    border-radius: 50px;
 }
 
 #card {
+    position: relative;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     border: 3px solid rgba(255, 255, 255, 0.2);
     padding: 16px;
     margin: 16px;
-    box-shadow: 0px 4px 8px 0px cornsilk;
-    transition: box-shadow 1.5s 250ms;
+    box-shadow: 0px 4px 8px 0px black;
+    transition: box-shadow 1s 200ms;
+    min-width: 150px;
+    max-width: 400px;
 }
 
 #card:hover {
-    box-shadow: 0px 8px 16px 0px white;
+    box-shadow: 0px 8px 12px 0px black;
 }
 
 .grid-container {
@@ -46,7 +45,6 @@ header img {
     grid-template-areas:
         'hero hero spacer'
         'main main spacer';
-    background-color: orange;
     gap: 10px;
     padding: 10px;
 }
@@ -61,4 +59,11 @@ header img {
 
 .main {
     grid-area: main;
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        padding: 0px;
+        padding-top: 8px;
+    }
 }
